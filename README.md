@@ -1,44 +1,52 @@
 # 🌐 Ayush Shrivastava - Portfolio
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Portfolio-Live-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Open%20Source-Yes-blue?style=for-the-badge" />
+
+# 💼 Personal Portfolio Website
+
+A modern, responsive, and interactive developer portfolio showcasing my skills, education, projects, and contact information.
+
+### 🌍 Live Website
+
+👉 **https://portfolio-ayush95.vercel.app**
+
 </p>
 
-## 🚀 About
+---
 
-Welcome to my personal portfolio website!
+## 📖 About
 
-This portfolio showcases my:
+This portfolio was built to showcase my journey as a **Java Full Stack Developer**.
 
-- 👨‍💻 Skills
-- 📂 Projects
+It contains:
+
+- 👨‍💻 About Me
+- 🚀 Technical Skills
 - 🎓 Education
-- 🏆 Certifications
+- 📂 Featured Projects
 - 📞 Contact Information
-- 📄 Resume
+- 📄 Resume Download
 
-It is designed to provide recruiters and developers with a quick overview of my technical expertise and projects.
+The website follows a clean dark UI with smooth scrolling and responsive design.
 
 ---
 
 ## ✨ Features
 
-- 🎨 Modern & Responsive UI
-- 📱 Mobile Friendly Design
-- 🌙 Dark Theme
-- ⚡ Smooth Animations
-- 📂 Project Showcase
-- 🧑 About Me Section
-- 🛠 Skills Section
-- 📞 Contact Form
-- 🔗 Social Media Links
+- ✅ Fully Responsive Design
+- 🌙 Modern Dark Theme
+- ⚡ Smooth Navigation
+- 📱 Mobile Friendly
+- 💼 Project Showcase
+- 🛠 Technical Skills Section
+- 🎓 Education Timeline
 - 📄 Resume Download
+- 🔗 Social Media Links
+- 📞 Contact Section
 
 ---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 ### Frontend
 
@@ -46,74 +54,173 @@ It is designed to provide recruiters and developers with a quick overview of my 
 - CSS3
 - JavaScript
 
+### Development Tools
+
+- VS Code
+- Git
+- GitHub
+- Vercel
+
+---
+
+# 📸 Website Preview
+
+## Home
+
+- Personal Introduction
+- Contact Information
+- Resume Download
+
+---
+
+## About
+
+Professional summary highlighting my expertise in
+
+- Java
+- Spring Boot
+- React.js
+- REST APIs
+- MongoDB
+- MySQL
+- Git
+- Data Structures & Algorithms
+
+---
+
+## Skills
+
+### Languages
+
+- Java
+- JavaScript
+- HTML5
+- CSS3
+
+### Frameworks
+
+- Spring Boot
+- React.js
+
+### Database
+
+- MongoDB
+- MySQL
+
 ### Tools
 
 - Git
 - GitHub
-- VS Code
 
 ---
 
-## 📸 Website Sections
+## Education
 
-- Home
-- About
-- Skills
-- Projects
-- Resume
-- Contact
+### 🎓 B.Tech Computer Science & Engineering
+
+**Medi-Caps University, Indore**
+
+- CGPA: **8.44**
+- 2023 – 2026 (Expected)
 
 ---
 
-## 💼 Featured Projects
+### Higher Secondary (Class XII)
 
-### 🚍 SmartRoute
+- Mount Litera Zee School
+- Percentage: **88%**
 
-AI-powered Route Optimization System for public transportation.
+---
 
-**Tech Used**
+### Secondary (Class X)
 
-- Java
+- Mount Litera Zee School
+- Percentage: **90%**
+
+---
+
+# 🚀 Featured Projects
+
+## 🚌 SmartRoute — Bus Route Optimizer
+
+A full-stack intelligent transportation platform that compares
+
+- Bus
+- Walking
+- Alternative Routes
+
+### Features
+
+- Route Optimization
+- Travel Cost Analysis
+- Carbon Emission Comparison
+- REST APIs
+- Interactive Maps
+
+**Tech Stack**
+
+- React.js
+- Spring Boot
+- MySQL
+- REST APIs
+
+---
+
+## 💊 Medical E-Commerce Platform
+
+A complete online pharmacy platform with secure authentication.
+
+### Features
+
+- JWT Authentication
+- Medicine Catalog
+- Search
+- Shopping Cart
+- Order Management
+- Inventory Module
+
+**Tech Stack**
+
+- React.js
 - Spring Boot
 - MongoDB
-- HTML
-- CSS
-- JavaScript
-- Leaflet.js
+- MySQL
+- JWT
 
 ---
 
-### 📚 DSA MASTER
+## ☕ Java Quiz Application
 
-AI-powered platform for DSA learning and placement preparation.
+Interactive quiz platform developed using Java.
 
-**Features**
+### Features
 
-- Company-wise Questions
-- Roadmaps
-- Revision Notes
-- AI Assistant
-- Progress Tracking
+- Multiple Choice Questions
+- Score Tracking
+- Result Calculation
 
 ---
 
-## 📂 Folder Structure
+# 📂 Project Structure
 
 ```
-Portfolio/
+portfolio
 │
-├── assets/
-├── css/
-├── images/
-├── js/
+├── .github/
 ├── index.html
+├── style.css
 ├── README.md
-└── LICENSE
+│
+├── smartroute.png
+├── medical_ecommerce.png
+├── java_quiz.png
+│
+└── assets/
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
 Clone the repository
 
@@ -121,75 +228,97 @@ Clone the repository
 git clone https://github.com/ayush95922/portfolio.git
 ```
 
-Open the project
+Move into the project
 
 ```bash
 cd portfolio
 ```
 
-Run locally
+Open
 
-Simply open **index.html** in your browser.
+```text
+index.html
+```
+
+in your browser.
 
 ---
 
-## 📈 Future Improvements
+# 📈 Future Improvements
 
-- Blog Section
-- Project Filtering
-- Theme Switcher
-- Backend Contact Form
-- Project Search
+- Add Blog Section
+- Contact Form Backend
 - Animations
-- Performance Optimization
+- Theme Toggle
+- More Projects
+- Experience Section
+- Certifications Section
+- Visitor Counter
 
 ---
 
-## 🙋 About Me
+# 👨‍💻 About Me
 
-Hi, I'm **Ayush Shrivastava**.
+**Ayush Shrivastava**
 
-🎓 B.Tech CSE Student
+🎓 B.Tech Computer Science Student
 
-💻 Aspiring Java Full Stack Developer
+💼 Java Full Stack Developer
 
 🌱 Currently Learning
 
-- Spring Boot
-- React
-- DSA
-- System Design
+- Spring Security
+- Microservices
 - AWS
+- Docker
+- System Design
 
 ---
 
-## 📬 Connect With Me
+# 📬 Connect With Me
 
-- GitHub: https://github.com/ayush95922
-- LinkedIn: *(Add your LinkedIn URL)*
-- Portfolio: *(Add your Live Portfolio URL)*
-- Email: *(Add your Email)*
+📧 Email
+
+```
+en23cs3012460@gmail.com
+```
+
+📍 Location
+
+```
+Indore, India
+```
+
+🐙 GitHub
+
+https://github.com/ayush95922
+
+💼 LinkedIn
+
+(Add your LinkedIn URL)
+
+🌐 Portfolio
+
+https://portfolio-ayush95.vercel.app
 
 ---
 
-## ⭐ Support
+# ⭐ If you like this project
 
-If you like this project,
+Give this repository a ⭐ Star.
 
-⭐ Star this repository
-
-and
-
-🍴 Fork it to support my work.
+It motivates me to build more awesome projects.
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project is licensed under the MIT License.
 
 ---
 
 <p align="center">
+
 Made with ❤️ by Ayush Shrivastava
+
 </p>
