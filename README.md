@@ -166,6 +166,30 @@ A full-stack intelligent transportation platform that compares
 
 ---
 
+## 📊 Project Management Application
+
+A multi-user project management platform with real-time collaboration and subscription controls.
+
+### Features
+
+- 20+ RESTful APIs across 7+ domain entities with DTO architecture
+- JWT-based authentication & role-controlled authorization via Spring Security
+- Issue tracking, task discussions, and team messaging
+- Email-based team invitations
+- Subscription-based access control (Free vs. Premium) with Razorpay payment gateway
+- Layered MVC architecture with optimized JSON serialization
+
+**Tech Stack**
+
+- Spring Boot
+- MySQL
+- Spring Security
+- JWT
+- Razorpay
+- REST APIs
+
+---
+
 ## 💊 Medical E-Commerce Platform
 
 A complete online pharmacy platform with secure authentication.
@@ -212,6 +236,7 @@ portfolio
 ├── README.md
 │
 ├── smartroute.png
+├── project_management.png
 ├── medical_ecommerce.png
 ├── java_quiz.png
 │
