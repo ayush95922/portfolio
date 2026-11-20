@@ -111,7 +111,7 @@ Interactive online assessment platform with quiz creation and automated scoring,
 - 📍 **Location:** Indore, Madhya Pradesh, India
 - 🐙 **GitHub:** [github.com/ayush95922](https://github.com/ayush95922)
 - 💼 **LinkedIn:** [ayush-shrivastava](https://www.linkedin.com/in/ayush-shrivastava-908a51404/)
-- ⚡ **Codolio:** [ayush95922](https://codolio.com/profile/ayush95922)
+- ⚡ **Codolio:** [Ayush95](https://codolio.com/profile/Ayush95)
 - 🌐 **Portfolio:** [portfolio-ayush95.vercel.app](https://portfolio-ayush95.vercel.app)
 
 ---
