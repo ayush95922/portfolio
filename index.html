@@ -2,291 +2,744 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Shrivastava - Portfolio</title>
-    <meta name="description" content="Ayush Shrivastava - Java Full Stack Developer | Backend Engineer | Software Engineer. Portfolio showcasing projects in Spring Boot, React.js, and MongoDB.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Ayush Shrivastav - Portfolio | Java Full Stack Engineer</title>
+    <meta name="description" content="Ayush Shrivastav - Java Full Stack Engineer | Software Engineer. Portfolio showcasing projects in Spring Boot, React.js, MySQL, AWS, and REST APIs.">
+    <meta name="keywords" content="Ayush Shrivastav, Java Full Stack, Spring Boot, Backend Engineer, React, AWS, Software Engineer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-blobs">
+    <!-- Animated background glowing blobs -->
+    <div class="bg-blobs" aria-hidden="true">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
     </div>
+
     <div class="main-container">
 
-        <!-- sidebar -->
-         <div class="sidebar">
-
-            <!-- profile -->
-             <div class="profile">
-                <div class="dp-text">AS</div>
-                <h1>Ayush Shrivastava</h1>
-                <h2>Java Full Stack Developer</h2>
+        <!-- Sidebar / Profile Panel -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-avatar-wrap">
+                    <div class="dp-text" aria-label="Ayush Shrivastav Avatar">AS</div>
+                </div>
+                <h1>Ayush Shrivastav</h1>
+                <h2 class="profile-role">Java Full Stack Engineer</h2>
             </div>
 
-             <!-- contact  -->
-       <div class="contact">
-                  <div class="email">
-                    <h3 class="label">Email</h3>
-                    <a href="mailto:en23cs3012460@gmail.com" class="value">en23cs3012460@gmail.com</a>
-                  </div>
-                  <div class="phone">
-                    <h3 class="label">Phone</h3>
-                    <a href="tel:6395284356" class="value">6395284356</a>
-                  </div>
-                  <div class="location">
-                    <h3 class="label">Location</h3>
-                    <p class="value">Indore, India</p>
-                  </div>
-             </div>
+            <!-- Contact Information -->
+            <div class="contact">
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="label">Email</span>
+                        <a href="mailto:ayushshrivastava2468@gmail.com" class="value">ayushshrivastava2468@gmail.com</a>
+                    </div>
+                </div>
 
-              <!-- social media-->
-               <div class="social">
-                 <a href="https://www.linkedin.com/in/ayush-shrivastava-908a51404/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                   <svg width="20" height="20" viewBox="0 0 24 24" fill="#0077B5" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.981 0 1.771-.773 1.771-1.729V1.729C24 .774 23.207 0 22.225 0z"/></svg>
-                 </a>
-                 <a href="https://github.com/ayush95922" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                   <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                 </a>
-               </div>
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="label">Phone</span>
+                        <a href="tel:+916395284356" class="value">+91-6395284356</a>
+                    </div>
+                </div>
 
-              <div class="resume-btn-container">
-                  <a href="https://drive.google.com/open?id=1u8SB5fSMzvnxS4epfUUIvVacuaMoGX4R" target="_blank" rel="noopener noreferrer" class="resume-btn" id="download-cv-btn">⬇ Download CV</a>
-              </div>
-         </div>
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="label">Location</span>
+                        <span class="value">Indore, Madhya Pradesh, India</span>
+                    </div>
+                </div>
+            </div>
 
-         <!-- main content -->
-          <div class="content">
-            <!-- navigation -->
-             <div id="navigation">
-             <nav>
-              <a href="#about" class="active">About</a>
-              <a href="#skills">Skills</a>
-              <a href="#education">Education</a>
-              <a href="#portfolio">Projects</a>
-              <a href="#contact-section">Contact</a>
-             </nav>
-             </div>
+            <!-- Social Media Links -->
+            <div class="social">
+                <a href="https://www.linkedin.com/in/ayush-shrivastava-908a51404/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-linkedin" title="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#0077B5" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.981 0 1.771-.773 1.771-1.729V1.729C24 .774 23.207 0 22.225 0z"/></svg>
+                </a>
+                <a href="https://github.com/ayush95922" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-github" title="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://codolio.com/profile/ayush95922" target="_blank" rel="noopener noreferrer" aria-label="Codolio Profile" class="social-codolio" title="Codolio Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </a>
+            </div>
 
-            <!-- about me -->
-             <div id="about">
-              <h2 class="heading">About Me</h2>
-               <div class="line"></div>
-               <p>Motivated Computer Science undergraduate with hands-on expertise in Java Full Stack Development, Spring Boot, React.js, REST APIs, MySQL, MongoDB, Git, and Data Structures &amp; Algorithms. Experienced in designing, developing, and deploying scalable web applications with clean architecture and modern frontend/backend technologies. Passionate about software engineering, problem-solving, and delivering impactful real-world solutions.</p>
-             </div>
+            <!-- Resume / CV Actions -->
+            <div class="sidebar-actions">
+                <button type="button" class="btn-primary-action" id="view-cv-btn" onclick="openCvModal()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    View CV
+                </button>
+                <a href="https://drive.google.com/open?id=1u8SB5fSMzvnxS4epfUUIvVacuaMoGX4R" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" id="download-cv-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download CV
+                </a>
+            </div>
+        </aside>
 
-            <!-- skills -->
-             <div id="skills">
-              <h2 class="heading">My Skills</h2>
-              <div class="line"></div>
-              <div class="grid-container">
-                  <div class="item">
-                        <img src="https://cdn.simpleicons.org/openjdk/ED8B00" alt="Java">
-                        <h3>Java</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://cdn.simpleicons.org/springboot" alt="Spring Boot">
-                        <h3>Spring Boot</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://cdn.simpleicons.org/react" alt="React">
-                        <h3>React.js</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript">
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://cdn.simpleicons.org/mysql" alt="MySQL">
-                        <h3>MySQL</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB">
-                        <h3>MongoDB</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://cdn.simpleicons.org/html5" alt="HTML5">
-                        <h3>HTML5</h3>
-                    </div>
-                    <div class="item">
-                        <svg width="45" height="45" viewBox="0 0 24 24" fill="#1572B6" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
-                        <h3>CSS3</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://cdn.simpleicons.org/git" alt="Git">
-                        <h3>Git &amp; GitHub</h3>
-                    </div>
-              </div>
-          </div>
+        <!-- Main Content Area -->
+        <main class="content">
 
-            <!-- education -->
-             <div id="education">
-                <h2 class="heading">Education</h2>
-               <div class="line"></div>
-               <div class="edtech">
-                    <div class="edfirst">
-                        <div class="goal"></div>
-                        <div class="year">2023 - 2026 (Expected)</div>
-                        <h3 class="degree">B.Tech — Computer Science &amp; Engineering</h3>
-                        <h3 class="college">Medi-Caps University, Indore</h3>
-                        <p class="work">CGPA: 8.44</p>
-                    </div>
-                    <div class="edsecond">
-                        <div class="goal"></div>
-                        <div class="year">2023</div>
-                        <h3 class="degree">Higher Secondary (Class XII)</h3>
-                        <h3 class="college">Mount Litera Zee School, Roorkee</h3>
-                        <p class="work">Percentage: 88%</p>
-                    </div>
-                     <div class="edthird">
-                        <div class="goal"></div>
-                        <div class="year">2021</div>
-                        <h3 class="degree">Secondary (Class X)</h3>
-                        <h3 class="college">Mount Litera Zee School, Roorkee</h3>
-                        <p class="work">Percentage: 90%</p>
-                    </div>
-             </div>
-             </div>
+            <!-- Responsive Sticky Navigation Bar -->
+            <header id="navigation">
+                <nav aria-label="Portfolio sections">
+                    <a href="#about" class="active">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#certifications">Certificates</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact-section">Contact</a>
+                </nav>
+            </header>
 
-            <!-- portfolio -->
-             <div id="portfolio">
-                <h2 class="heading">Projects</h2>
-                <div class="line"></div>
+            <!-- 1. About Me Section -->
+            <section id="about" class="section-block reveal">
+                <div class="heading-wrap">
+                    <h2 class="heading">
+                        <span class="heading-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </span>
+                        About Me
+                    </h2>
+                    <div class="line"></div>
+                </div>
+                <p class="bio-text">
+                    Final-year B.Tech Computer Science student graduating in 2027, with hands-on experience developing Java and Spring Boot applications using REST APIs, Spring Security, Hibernate, Spring Data JPA, and MySQL. Built full-stack projects featuring JWT-based authentication, database integration, project management, and payment gateway integration. Solved 320+ Data Structures and Algorithms problems and completed AWS Academy cloud training. Seeking a Java Developer role to contribute to backend development and build reliable, maintainable software applications.
+                </p>
+
+                <!-- Quick Highlights Grid -->
+                <div class="about-highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-number">320+</div>
+                        <div class="highlight-label">DSA Problems Solved</div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-number">20+</div>
+                        <div class="highlight-label">REST APIs Architected</div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-number">AWS</div>
+                        <div class="highlight-label">Academy Cloud Trained</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Technical Skills Section -->
+            <section id="skills" class="section-block reveal">
+                <div class="heading-wrap">
+                    <h2 class="heading">
+                        <span class="heading-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </span>
+                        Technical Skills
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="skills-category-container">
+                    <!-- Languages & Backend -->
+                    <div class="skills-category">
+                        <div class="category-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            Languages &amp; Backend Engineering
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/openjdk/ED8B00" alt="Java"> Java</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/openjdk/ED8B00" alt="Core Java"> Core Java</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="Spring Boot"> Spring Boot</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="Spring MVC"> Spring MVC</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/springsecurity/6DB33F" alt="Spring Security"> Spring Security</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/hibernate/59666C" alt="Spring Data JPA"> Spring Data JPA &amp; Hibernate</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/jsonwebtokens/000000" alt="JWT"> JWT Authentication</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="REST APIs"> REST APIs</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/openai/412991" alt="Spring AI"> Spring AI</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"> JavaScript</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="SQL"> SQL</span>
+                            <span class="skill-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> OOP Concepts</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend & Cloud/DB -->
+                    <div class="skills-category">
+                        <div class="category-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            Frontend, Cloud &amp; Databases
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"> React.js</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"> Tailwind CSS</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5"> HTML5</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3"> CSS3</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL"> MySQL</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB Atlas"> MongoDB Atlas</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/amazonwebservices/FF9900" alt="AWS"> AWS Cloud</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools, Testing & CS Core -->
+                    <div class="skills-category">
+                        <div class="category-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            Testing, Tools &amp; CS Core Fundamentals
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/postman/FF6C37" alt="Postman"> Postman (API Testing)</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/apachemaven/C71A36" alt="Maven"> Maven</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"> Git</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub"> GitHub</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/intellijidea/000000" alt="IntelliJ"> IntelliJ IDEA</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code"> VS Code</span>
+                            <span class="skill-chip"><img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="Vercel"> Vercel</span>
+                            <span class="skill-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> Data Structures &amp; Algorithms</span>
+                            <span class="skill-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg> DBMS</span>
+                            <span class="skill-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg> Operating Systems</span>
+                            <span class="skill-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> Computer Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Featured Projects Section -->
+            <section id="portfolio" class="section-block reveal">
+                <div class="heading-wrap">
+                    <h2 class="heading">
+                        <span class="heading-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        Featured Projects
+                    </h2>
+                    <div class="line"></div>
+                </div>
 
                 <div class="project-container">
-                    <!-- Project 1: SmartRoute -->
+                    <!-- Project 1: Project Management System -->
                     <div class="project">
                         <div class="project-img-wrapper">
-                            <img src="smartroute.png" alt="SmartRoute – Smart Bus Route Optimizer">
+                            <img src="project_management.png" alt="Project Management System Preview" loading="lazy">
+                            <span class="project-featured-badge">REST Backend</span>
                         </div>
                         <div class="card">
-                            <h3>SmartRoute – Bus Route Optimizer</h3>
-                            <p>A full-stack route optimization platform comparing bus, walking, and alternative transport modes. Features travel cost analysis, carbon emission comparison, and optimized DB schemas built with Spring Boot &amp; React.</p>
+                            <h3>Project Management System</h3>
+                            <div class="project-subtitle">Spring Boot REST Backend with Role-Based Security</div>
+                            <ul class="project-bullets">
+                                <li>Architected a multi-user project management backend exposing 20+ REST APIs across 7+ domain entities, using DTOs and a layered MVC architecture with Hibernate/JPA over MySQL.</li>
+                                <li>Implemented JWT authentication and role-based authorization with Spring Security; tested and documented all endpoints using Postman.</li>
+                                <li>Built issue tracking, task discussions, team messaging and email-based project invitations; designed Free vs Premium subscription access control with Razorpay integration for plan upgrades.</li>
+                            </ul>
                             <div class="project-tags">
-                                <span>React.js</span><span>Spring Boot</span><span>MySQL</span><span>REST APIs</span>
+                                <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>JWT</span><span>Hibernate/JPA</span><span>MySQL</span><span>Maven</span><span>Postman</span><span>Razorpay API</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://route-optimizer-six-bay.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">
+                                <a href="https://github.com/ayush95922/Project-Management-application" target="_blank" rel="noopener noreferrer" class="project-link project-link-git">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    GitHub Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: SmartRoute -->
+                    <div class="project">
+                        <div class="project-img-wrapper">
+                            <img src="smartroute.png" alt="SmartRoute Platform Preview" loading="lazy">
+                            <span class="project-featured-badge">Full Stack</span>
+                        </div>
+                        <div class="card">
+                            <h3>SmartRoute – Transit Optimizer</h3>
+                            <div class="project-subtitle">Multi-Modal Transit Optimizer with Shortest Path Algorithm</div>
+                            <ul class="project-bullets">
+                                <li>Built a full-stack route comparison platform evaluating Bus, Walking, Cycling, and Car routes on travel time, distance, cost, and carbon emissions across 15+ routes in Indore.</li>
+                                <li>Implemented Dijkstra's algorithm for shortest-path optimization across a custom transit graph, enabling efficient route computation based on distance and travel cost, with interactive map rendering via Leaflet.js and OpenStreetMap.</li>
+                                <li>Secured REST endpoints with JWT + Spring Security over normalized MongoDB Atlas schemas; designed indexed queries to keep route lookups fast at scale; deployed live on Vercel with a responsive Tailwind CSS frontend.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span>Java 17</span><span>Spring Boot 3.2</span><span>MongoDB Atlas</span><span>Spring Security</span><span>JWT</span><span>Leaflet.js</span><span>OpenStreetMap</span><span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://route-optimizer-ayush95.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
                                     Live Demo
                                 </a>
-                                <a href="https://github.com/ayush95922/Route-Optimizer.git" target="_blank" rel="noopener noreferrer" class="project-link project-link-git">
+                                <a href="https://github.com/ayush95922/Route-Optimizer" target="_blank" rel="noopener noreferrer" class="project-link project-link-git">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                                    GitHub
+                                    GitHub Code
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 2: Project Management Application -->
+                    <!-- Project 3: Ewon Medicare -->
                     <div class="project">
                         <div class="project-img-wrapper">
-                            <img src="project_management.png" alt="Project Management Application">
+                            <img src="medical_ecommerce.png" alt="Ewon Medicare Platform Preview" loading="lazy">
+                            <span class="project-featured-badge">Full Stack</span>
                         </div>
                         <div class="card">
-                            <h3>Project Management Application</h3>
+                            <h3>Ewon Medicare – Online Pharmacy</h3>
+                            <div class="project-subtitle">Medicine E-Commerce Platform with Admin Inventory</div>
                             <ul class="project-bullets">
-                                <li>Architected a multi-user project management backend using Spring Boot and MySQL, exposing 20+ RESTful APIs across 7+ domain entities with DTO-based architecture and optimized JSON serialization.</li>
-                                <li>Implemented JWT-based authentication and role-controlled authorization via Spring Security, alongside collaboration features including issue tracking, task discussions, team messaging, and email-based invitations.</li>
-                                <li>Designed subscription-based access control (Free vs. Premium) and integrated Razorpay payment gateway for plan upgrades; enforced clean separation of concerns through layered MVC architecture.</li>
+                                <li>Developed a full-stack online pharmacy marketplace supporting 10+ product SKUs with catalog, cart, checkout, and order management, secured with JWT-based authentication and role-based authorization.</li>
+                                <li>Integrated Razorpay for end-to-end payment processing and built an admin dashboard for managing products, inventory, and orders in real time.</li>
+                                <li>Designed RESTful APIs following MVC architecture with normalized MySQL schemas for persistent, consistent storage under concurrent order flows.</li>
                             </ul>
                             <div class="project-tags">
-                                <span>Spring Boot</span><span>MySQL</span><span>Spring Security</span><span>JWT</span><span>Razorpay</span><span>REST APIs</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/ayush95922/Project-Management-application.git" target="_blank" rel="noopener noreferrer" class="project-link project-link-git">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: Medical E-Commerce -->
-                    <div class="project">
-                        <div class="project-img-wrapper">
-                            <img src="medical_ecommerce.png" alt="Medical E-Commerce Platform">
-                        </div>
-                        <div class="card">
-                            <h3>Medical E-Commerce Platform</h3>
-                            <p>A full-stack online pharmacy marketplace with JWT-based authentication and role-based authorization. Features medicine catalog, search, cart, order management, and inventory modules end-to-end.</p>
-                            <div class="project-tags">
-                                <span>React.js</span><span>Spring Boot</span><span>MongoDB</span><span>MySQL</span><span>JWT</span>
+                                <span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>React.js (Vite)</span><span>MySQL</span><span>JWT</span><span>Razorpay API</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/ayush95922/medical-ecommerce.git" target="_blank" rel="noopener noreferrer" class="project-link project-link-git">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                                    GitHub
+                                    GitHub Code
                                 </a>
                             </div>
                         </div>
                     </div>
+
                     <!-- Project 4: Java Quiz Application -->
                     <div class="project">
                         <div class="project-img-wrapper">
-                            <img src="java_quiz.png" alt="Java Quiz Application">
+                            <img src="java_quiz.png" alt="Java Quiz Application Preview" loading="lazy">
+                            <span class="project-featured-badge">Interactive App</span>
                         </div>
                         <div class="card">
                             <h3>Java Quiz Application</h3>
-                            <p>An interactive online assessment platform with quiz creation and result evaluation features. Built secure backend APIs with Spring Boot using OOP principles; integrated MySQL for storing questions and user results with an intuitive React frontend.</p>
+                            <div class="project-subtitle">Online Assessment Platform with OOP Backend</div>
+                            <ul class="project-bullets">
+                                <li>An interactive online assessment platform with quiz creation and automated result evaluation features.</li>
+                                <li>Built secure backend APIs with Spring Boot adhering strictly to OOP principles; integrated MySQL for storing question sets and test results.</li>
+                                <li>Delivered an intuitive React frontend providing instantaneous scoring feedback and performance review.</li>
+                            </ul>
                             <div class="project-tags">
-                                <span>Java</span><span>Spring Boot</span><span>React.js</span><span>MySQL</span>
+                                <span>Java</span><span>Spring Boot</span><span>React.js</span><span>MySQL</span><span>OOP</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/ayush95922/java-quiz.git" target="_blank" rel="noopener noreferrer" class="project-link project-link-git">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                                    GitHub
+                                    GitHub Code
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-             </div>
+            </section>
 
-            <!-- contact section -->
-             <div id="contact-section">
-                <h2 class="heading">Contact</h2>
-                <div class="line"></div>
+            <!-- 4. Experience & Internship Section -->
+            <section id="experience" class="section-block reveal">
+                <div class="heading-wrap">
+                    <h2 class="heading">
+                        <span class="heading-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </span>
+                        Internship &amp; Experience
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">Jun 2026 – Jul 2026</span>
+                        <h3 class="timeline-title">Cloud Architecting Training</h3>
+                        <h4 class="timeline-org">AWS Academy</h4>
+                        <p class="timeline-desc">
+                            Completed an in-house Cloud Architecting program covering Amazon EC2, Amazon S3, Virtual Private Cloud (VPC), Identity &amp; Access Management (IAM), Relational Database Service (RDS), cloud security architectures, and scalable networking through applied hands-on labs and architectural assessments.
+                        </p>
+                        <span class="timeline-meta-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            EC2 · S3 · VPC · IAM · RDS · Cloud Security
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Education Section -->
+            <section id="education" class="section-block reveal">
+                <div class="heading-wrap">
+                    <h2 class="heading">
+                        <span class="heading-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </span>
+                        Education
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- B.Tech -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2023 – 2027</span>
+                        <h3 class="timeline-title">B.Tech — Computer Science &amp; Engineering</h3>
+                        <h4 class="timeline-org">Medi-Caps University, Indore</h4>
+                        <p class="timeline-desc">
+                            CGPA: <strong>8.44 / 10</strong> · Graduation: 2027. Core coursework in Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.
+                        </p>
+                    </div>
+
+                    <!-- Class XII -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2023</span>
+                        <h3 class="timeline-title">Senior Secondary (CBSE Class XII)</h3>
+                        <h4 class="timeline-org">Mount Litera Zee School, Roorkee</h4>
+                        <p class="timeline-desc">
+                            Score: <strong>83.8%</strong>. Focused on Science &amp; Mathematics stream with Computer Science fundamentals.
+                        </p>
+                    </div>
+
+                    <!-- Class X -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2021</span>
+                        <h3 class="timeline-title">Secondary Education (CBSE Class X)</h3>
+                        <h4 class="timeline-org">Mount Litera Zee School, Roorkee</h4>
+                        <p class="timeline-desc">
+                            Score: <strong>89%</strong>. Strong academic foundation in Science and Mathematics.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Certifications Section -->
+            <section id="certifications" class="section-block reveal">
+                <div class="heading-wrap">
+                    <h2 class="heading">
+                        <span class="heading-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        </span>
+                        Licenses &amp; Certifications
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-header">
+                                <div class="cert-icon" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="cert-title">AWS Academy Graduate – Cloud Architecting</h4>
+                                    <p class="cert-issuer">AWS Academy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-year">2026</span>
+                            <span class="cert-status">Verified Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-header">
+                                <div class="cert-icon" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 16 14"></polygon></svg>
+                                </div>
+                                <div>
+                                    <h4 class="cert-title">AWS Academy Graduate – Cloud Foundations</h4>
+                                    <p class="cert-issuer">AWS Academy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-year">2026</span>
+                            <span class="cert-status">Verified Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-header">
+                                <div class="cert-icon" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </div>
+                                <div>
+                                    <h4 class="cert-title">Java Spring Framework, Spring Boot, Spring AI</h4>
+                                    <p class="cert-issuer">Udemy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-year">Nov 2025</span>
+                            <span class="cert-status">Verified Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-header">
+                                <div class="cert-icon" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                                </div>
+                                <div>
+                                    <h4 class="cert-title">Advanced Data Structures &amp; Algorithms</h4>
+                                    <p class="cert-issuer">Board Infinity</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-year">Jan 2026</span>
+                            <span class="cert-status">Verified Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-header">
+                                <div class="cert-icon" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <div>
+                                    <h4 class="cert-title">Complete JavaScript with HTML5 &amp; CSS3, Zero to Expert</h4>
+                                    <p class="cert-issuer">Udemy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-year">Jan 2025</span>
+                            <span class="cert-status">Verified Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 6 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-header">
+                                <div class="cert-icon" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="cert-title">Introduction to SQL</h4>
+                                    <p class="cert-issuer">Simplilearn SkillUp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-year">Completed</span>
+                            <span class="cert-status">Verified Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Achievements Section -->
+            <section id="achievements" class="section-block reveal">
+                <div class="heading-wrap">
+                    <h2 class="heading">
+                        <span class="heading-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7v2h10v-2h-2c-.55 0-1-.45-1-1v-2.34c3.27-.47 6-3.24 6-6.66V4H4v4c0 3.42 2.73 6.19 6 6.66z"></path></svg>
+                        </span>
+                        Achievements &amp; Activities
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- SIH -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>Smart India Hackathon (SIH) 2025</h4>
+                            <p>Participated in the Internal Round at Medi-Caps University; collaborated intensively in a team to engineer solutions addressing a real-world problem statement.</p>
+                            <div class="achievement-stats-row">
+                                <span class="stat-chip">Team Collaboration</span>
+                                <span class="stat-chip">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LeetCode & GeeksforGeeks -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>Competitive Programming &amp; DSA Consistency</h4>
+                            <p>Solved 320+ coding challenges across LeetCode &amp; GeeksforGeeks with strong conceptual understanding in algorithmic optimization.</p>
+                            <div class="achievement-stats-row">
+                                <span class="stat-chip">320+ Problems</span>
+                                <span class="stat-chip">225+ Active Days</span>
+                                <span class="stat-chip">88+ Day Streak</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. Contact Section -->
+            <section id="contact-section" class="section-block reveal">
+                <div class="heading-wrap">
+                    <h2 class="heading">
+                        <span class="heading-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        Get In Touch
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
                 <form class="contact-form" onsubmit="handleFormSubmit(event)">
                     <div class="form-group">
-                        <input type="text" id="contact-name" placeholder="Your Name" required>
-                        <input type="email" id="contact-email" placeholder="Your Email" required>
+                        <input type="text" id="contact-name" placeholder="Your Name" required autocomplete="name">
+                        <input type="email" id="contact-email" placeholder="Your Email" required autocomplete="email">
                     </div>
                     <input type="text" id="contact-subject" placeholder="Subject">
                     <textarea id="contact-message" rows="5" placeholder="Your message..." required></textarea>
-                    <button type="submit" id="contact-submit-btn">Send Message</button>
+                    <button type="submit" id="contact-submit-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        Send Message
+                    </button>
                 </form>
-                <div class="footer">
-                    <p>© 2025 Ayush Shrivastava. Crafted with passion.</p>
-                </div>
-             </div>
 
-          </div>
+                <footer class="footer">
+                    <p>© 2026 Ayush Shrivastav. Crafted with passion &amp; clean code.</p>
+                </footer>
+            </section>
+
+        </main>
     </div>
 
+    <!-- CV View Modal -->
+    <div class="modal-overlay" id="cv-modal" onclick="handleModalBackdropClick(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ayush Shrivastav — Curriculum Vitae</h3>
+                <div class="modal-actions">
+                    <a href="cv.html" target="_blank" class="modal-btn modal-btn-download" title="Open full printable view">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                        Print / Open CV
+                    </a>
+                    <a href="https://drive.google.com/open?id=1u8SB5fSMzvnxS4epfUUIvVacuaMoGX4R" target="_blank" rel="noopener noreferrer" class="modal-btn modal-btn-download">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Drive Link
+                    </a>
+                    <button class="modal-btn modal-btn-close" onclick="closeCvModal()" aria-label="Close CV preview">✕</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="cv-preview-sheet">
+                    <h1>AYUSH SHRIVASTAV</h1>
+                    <div class="cv-sub">Java Full Stack Engineer | Software Engineer</div>
+                    <div class="cv-contact-bar">
+                        <span>Indore, Madhya Pradesh, India</span>
+                        <span>•</span>
+                        <span>+91-6395284356</span>
+                        <span>•</span>
+                        <a href="mailto:ayushshrivastava2468@gmail.com">ayushshrivastava2468@gmail.com</a>
+                        <span>•</span>
+                        <a href="https://www.linkedin.com/in/ayush-shrivastava-908a51404/" target="_blank">LinkedIn</a>
+                        <span>•</span>
+                        <a href="https://github.com/ayush95922" target="_blank">GitHub</a>
+                        <span>•</span>
+                        <a href="https://codolio.com/profile/ayush95922" target="_blank">Codolio</a>
+                    </div>
+
+                    <div class="cv-section-title">PROFESSIONAL SUMMARY</div>
+                    <p>Final-year B.Tech Computer Science student graduating in 2027, with hands-on experience developing Java and Spring Boot applications using REST APIs, Spring Security, Hibernate, Spring Data JPA and MySQL. Built full-stack projects featuring JWT-based authentication, database integration, project management and payment gateway integration. Solved 320+ Data Structures and Algorithms problems and completed AWS Academy cloud training. Seeking a Java Developer role to contribute to backend development and build reliable, maintainable software applications.</p>
+
+                    <div class="cv-section-title">TECHNICAL SKILLS</div>
+                    <p><strong>Languages &amp; Backend:</strong> Java, Core Java, OOP, JavaScript, SQL | Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Spring AI, REST APIs, JWT Authentication.</p>
+                    <p><strong>Frontend &amp; DB/Cloud:</strong> React.js, Tailwind CSS, HTML5/CSS3 | MySQL, AWS.</p>
+                    <p><strong>Testing &amp; QA:</strong> Postman (REST API testing).</p>
+                    <p><strong>Tools &amp; CS Core:</strong> Maven, Git, GitHub, IntelliJ, VS Code, Vercel | Data Structures &amp; Algorithms, DBMS, OS, Computer Networks.</p>
+
+                    <div class="cv-section-title">PROJECTS</div>
+                    <div class="cv-item-title">Project Management System – Spring Boot REST Backend</div>
+                    <div class="cv-item-meta">Tech Stack: Java, Spring Boot, Spring Security + JWT, Hibernate/JPA, MySQL, Maven, Postman, Razorpay API</div>
+                    <ul>
+                        <li>Architected a multi-user project management backend exposing 20+ REST APIs across 7+ domain entities, using DTOs and a layered MVC architecture with Hibernate/JPA over MySQL.</li>
+                        <li>Implemented JWT authentication and role-based authorization with Spring Security; tested and documented all endpoints using Postman.</li>
+                        <li>Built issue tracking, task discussions, team messaging and email-based project invitations; designed Free vs Premium subscription access control with Razorpay integration for plan upgrades.</li>
+                    </ul>
+
+                    <div class="cv-item-title">SmartRoute – Multi-Modal Transit Optimizer</div>
+                    <div class="cv-item-meta">Tech Stack: Java 17, Spring Boot 3.2, MongoDB Atlas, Spring Security + JWT, Leaflet.js, OpenStreetMap, Vanilla JS, Tailwind CSS</div>
+                    <ul>
+                        <li>Built a full-stack route comparison platform evaluating Bus, Walking, Cycling, and Car routes on travel time, distance, cost, and carbon emissions across 15+ routes in Indore.</li>
+                        <li>Implemented Dijkstra's algorithm for shortest-path optimization across a custom transit graph, enabling efficient route computation based on distance and travel cost, with interactive map rendering via Leaflet.js and OpenStreetMap.</li>
+                        <li>Secured REST endpoints with JWT + Spring Security over normalized MongoDB Atlas schemas; designed indexed queries to keep route lookups fast at scale; deployed live on Vercel with a responsive Tailwind CSS frontend.</li>
+                    </ul>
+
+                    <div class="cv-item-title">Ewon Medicare – Medicine E-Commerce Platform</div>
+                    <div class="cv-item-meta">Tech Stack: Java, Spring Boot, Spring MVC, React.js (Vite), MySQL, JWT Authentication, Razorpay API</div>
+                    <ul>
+                        <li>Developed a full-stack online pharmacy marketplace supporting 10+ product SKUs with catalog, cart, checkout, and order management, secured with JWT-based authentication and role-based authorization.</li>
+                        <li>Integrated Razorpay for end-to-end payment processing and built an admin dashboard for managing products, inventory, and orders in real time.</li>
+                        <li>Designed RESTful APIs following MVC architecture with normalized MySQL schemas for persistent, consistent storage under concurrent order flows.</li>
+                    </ul>
+
+                    <div class="cv-section-title">INTERNSHIP</div>
+                    <div class="cv-item-title">AWS Academy — Cloud Architecting Training (Jun 2026 – Jul 2026)</div>
+                    <p>Completed an in-house Cloud Architecting program covering EC2, S3, VPC, IAM, RDS, cloud security, and networking through applied labs and assessments.</p>
+
+                    <div class="cv-section-title">EDUCATION</div>
+                    <p><strong>Medi-Caps University, Indore</strong> — B.Tech, Computer Science &amp; Engineering (2023 – 2027) | CGPA: 8.44/10 (Graduation 2027)</p>
+                    <p><strong>Mount Litera Zee School, Roorkee</strong> — CBSE XII (2023) &amp; CBSE X (2021), 83.8% | 89%</p>
+
+                    <div class="cv-section-title">CERTIFICATIONS</div>
+                    <ul>
+                        <li>AWS Academy Graduate – Cloud Architecting (2026)</li>
+                        <li>AWS Academy Graduate – Cloud Foundations</li>
+                        <li>Java Spring Framework, Spring Boot, Spring AI — Udemy (Nov 2025)</li>
+                        <li>Advanced Data Structures &amp; Algorithms — Board Infinity (Jan 2026)</li>
+                        <li>Complete JavaScript with HTML5 &amp; CSS3, Zero to Expert — Udemy (Jan 2025)</li>
+                        <li>Introduction to SQL — Simplilearn SkillUp</li>
+                    </ul>
+
+                    <div class="cv-section-title">ACHIEVEMENTS &amp; ACTIVITIES</div>
+                    <ul>
+                        <li>Participated in Smart India Hackathon (SIH) 2025 – Internal Round, Medi-Caps University; collaborated in a team on a real-world problem statement.</li>
+                        <li>320+ problems solved on LeetCode &amp; GeeksforGeeks | 225+ active days | 88+ day best streak.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script>
-        // Typewriter Effect
-        const subtitle = document.querySelector('.profile h2');
-        const text = subtitle.innerText;
-        subtitle.innerText = '';
-        let i = 0;
-
-        function typeWriter() {
-            if (i < text.length) {
-                subtitle.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 80);
+        // Typewriter Effect for Role Subtitle
+        const subtitle = document.querySelector('.profile-role');
+        if (subtitle) {
+            const text = subtitle.innerText;
+            subtitle.innerText = '';
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    subtitle.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 65);
+                }
             }
+            window.addEventListener('DOMContentLoaded', typeWriter);
         }
-        
-        window.addEventListener('DOMContentLoaded', typeWriter);
 
-        // Scroll Reveal Animation
+        // Intersection Observer for Scroll Reveal
         const observerOptions = {
-            threshold: 0.1
+            threshold: 0.08,
+            rootMargin: '0px 0px -40px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -297,56 +750,104 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.content > div[id]').forEach(section => {
-            section.classList.add('reveal');
+        document.querySelectorAll('.reveal').forEach(section => {
             observer.observe(section);
         });
 
-        // Simple active state toggle for navigation based on scroll
-        const sections = document.querySelectorAll('.content > div[id]');
+        // Active Navigation Highlight on Scroll & Auto-Centering in scrollable container
+        const sections = document.querySelectorAll('.content > section[id]');
+        const navContainer = document.querySelector('nav');
         const navLinks = document.querySelectorAll('nav a');
 
-        window.addEventListener('scroll', () => {
+        function updateActiveNav() {
             let current = '';
+            const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 200) {
+                const sectionTop = section.offsetTop - 180;
+                if (scrollPos >= sectionTop) {
                     current = section.getAttribute('id');
                 }
             });
 
             navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
+                const target = link.getAttribute('href').substring(1);
+                if (target === current) {
+                    if (!link.classList.contains('active')) {
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+
+                        // Keep active link visible in horizontally scrolling nav
+                        if (navContainer) {
+                            const linkLeft = link.offsetLeft;
+                            const linkWidth = link.offsetWidth;
+                            const containerWidth = navContainer.offsetWidth;
+                            navContainer.scrollTo({
+                                left: linkLeft - (containerWidth / 2) + (linkWidth / 2),
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
                 }
             });
-        });
+        }
 
-        // Smooth scroll for nav links
+        window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+        // Smooth Scroll for Nav Links
         navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                window.scrollTo({
-                    top: targetSection.offsetTop - 100,
-                    behavior: 'smooth'
-                });
+                if (targetSection) {
+                    const yOffset = -90;
+                    const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }
             });
+        });
+
+        // CV Modal Logic
+        function openCvModal() {
+            const modal = document.getElementById('cv-modal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCvModal() {
+            const modal = document.getElementById('cv-modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function handleModalBackdropClick(e) {
+            if (e.target.id === 'cv-modal') {
+                closeCvModal();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeCvModal();
+            }
         });
 
         // Contact Form Handler
         function handleFormSubmit(e) {
             e.preventDefault();
             const btn = document.getElementById('contact-submit-btn');
-            btn.textContent = '✓ Message Sent!';
-            btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+            const originalHtml = btn.innerHTML;
+            btn.innerHTML = '✓ Message Sent Successfully!';
+            btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+            btn.style.color = '#ffffff';
+
             setTimeout(() => {
-                btn.textContent = 'Send Message';
+                btn.innerHTML = originalHtml;
                 btn.style.background = '';
+                btn.style.color = '';
                 e.target.reset();
-            }, 3000);
+            }, 3500);
         }
     </script>
 </body>
